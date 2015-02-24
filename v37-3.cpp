@@ -9,7 +9,21 @@ Exemplu: dacă n=4, k=3 şi tabloul v=(1,2,3,4), atunci se vor afişa în ordine
 */
 #include <iostream>
 using namespace std;
+void del(long x,int y) {
+    int nr1,nr2,uc,p=1;
+    nr1=x;
+    while(nr1) {
+        uc=nr1%10;
+        if(uc<y) {
+            nr2+=uc*p;
+            p*=10;
+        }
+        nr1/=10;
+    }
+    cout<<nr2;
+}
 int main () {
+    del(37659,6);
     int nr=0,i,j,v[100],n=0,aux,num=0,x[100],s=0,ok=0,k;
     cin>>n;
     for(i=1;i<=n;i++) {

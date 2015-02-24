@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream>
 using namespace std;
 int n,x[100],i,mini,maxi;
@@ -31,3 +32,6 @@ int main() {
         cout<<x[i]<< " ";
     }
 }
+=======
+
+>>>>>>> 15a79969c04ba798c5144b271955881198488cd8
