@@ -15,7 +15,7 @@ void del(long x,int y) {
     nr1=x;
     while(nr1) {
         uc=nr1%10;
-        if(uc<y) {
+        if(uc<=y) {
             nr2+=uc*p;
             p*=10;
         }
