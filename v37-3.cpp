@@ -9,6 +9,7 @@ Exemplu: dacă n=4, k=3 şi tabloul v=(1,2,3,4), atunci se vor afişa în ordine
 */
 #include <iostream>
 using namespace std;
+//varianta 38 ex3
 void del(long x,int y) {
     int nr1,nr2,uc,p=1;
     nr1=x;
@@ -21,6 +22,7 @@ void del(long x,int y) {
         nr1/=10;
     }
     cout<<nr2;
+//sfarsit varianta 38 ex3
 }
 int main () {
     del(37659,6);
