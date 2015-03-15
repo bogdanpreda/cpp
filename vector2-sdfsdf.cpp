@@ -1,8 +1,20 @@
 #include <iostream>
 using namespace std;
-int main() {
-    int n,nr=0,v[50],k,r,i,j,b,a,aux;
 
+void G(int k)
+{ int i;
+    int p[55];
+for(i=1;i<=9;i++)
+{p[k]=i;
+if(i<=3)G(k+1);
+else
+cout<<p[0]<<p[1]<<p[2]<<endl;
+}
+}
+
+int main() {
+
+    G(0);/*int n,nr=0,v[50],k,r,i,j,b,a,aux;
     cin>>n;cin>>k;
     for(i=1;i<=n;i++) {
         cin>>v[i];
@@ -24,7 +36,7 @@ int main() {
             v[j]=aux;
         }
      for(i=1;i<=n;i++)
-            cout<<v[i]<< " ";
+            cout<<v[i]<< " ";*/
 }
 
 

@@ -17,9 +17,9 @@ int main() {
         i=0;
         ok=0;
        for(i=strlen(s)-1;i>=0;i--) {
-            if(strchr("aeiou",s[i]) && ok==0) {
+            if(strchr("aeiou",s[i])) {
             strcpy(s+i,s+i+1);
-            ok++;
+            break;
         }
        }
        cout<<s;
